@@ -1,0 +1,31 @@
+begin
+    var str : string ;
+    var n : number ;
+    var numword : number ;
+    var countvol : number ;
+    var vowels = ["a", "e", "i", "o", "u"] ;
+    //  The length of the sentence
+    return n =: str.length ;
+    
+    // The number of words in the sentence
+    for (var i =0 ; i< str.length ; i++ ):
+
+        if (str[i] === "") then
+          numword = numword + 1 ;  
+        end if 
+
+        return numword ;
+
+    end for
+    // The number of vowels in the sentence   
+    for (var letter in str.toLowerCase()):
+
+        if ( vowels.includes(letter)) then
+            countvol = countvol + 1 ;
+        end if  
+
+        return countvol ;
+
+    end for
+
+end
